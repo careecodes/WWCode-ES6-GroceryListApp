@@ -1,8 +1,8 @@
-let groceryList = document.querySelector('#grocery_list');
+const groceryList = document.querySelector('#grocery_list');
 const addToListButton = document.querySelector('#add_to_list');
 const groceryListInput = document.querySelector("#grocery_list_input");
 let addToList = () => {
-	groceryList.innerHTML += `<li> ${groceryListInput.value} </li>`;
+	groceryList.innerHTML += `<li>${groceryListInput.value}</li>`;
 	groceryListInput.value = '';
 }
 
